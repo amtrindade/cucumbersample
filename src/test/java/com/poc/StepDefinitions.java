@@ -1,4 +1,4 @@
-package POC;
+package com.poc;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

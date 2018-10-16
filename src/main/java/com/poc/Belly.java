@@ -1,4 +1,4 @@
-package POC;
+package com.poc;
 
 public class Belly {
     private int cookie;
