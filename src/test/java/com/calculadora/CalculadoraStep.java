@@ -27,7 +27,7 @@ public class CalculadoraStep {
     }
 
     @Entao("o valor calculado deve ser {int}")
-    public void valor_somado_deve_ser(int total) {
+    public void valor_calculado_deve_ser(int total) {
         int resultado = 0;
         if (calc.getOperacao().equals("+")) {
             resultado = calc.somar();
