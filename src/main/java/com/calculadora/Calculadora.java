@@ -3,6 +3,15 @@ package com.calculadora;
 public class Calculadora {
     private int valor1;
     private int valor2;
+    private String operacao;
+
+    public String getOperacao() {
+        return operacao;
+    }
+
+    public void setOperacao(String operacao) {
+        this.operacao = operacao;
+    }
 
     public int getValor1() {
         return valor1;
@@ -22,5 +31,9 @@ public class Calculadora {
 
     public int somar(){
         return this.getValor1() + this.getValor2();
+    }
+
+    public int subtrair() {
+        return this.getValor1() - this.getValor2();
     }
 }

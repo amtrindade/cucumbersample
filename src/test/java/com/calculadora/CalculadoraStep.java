@@ -19,12 +19,23 @@ public class CalculadoraStep {
     @Quando("aciono a operação {string}")
     public void aciono_a_operacao(String operacao){
         if (operacao.equals("somar")){
-            System.out.println("Somou");
+            calc.setOperacao("+");
+        }
+        if (operacao.equals("subtrair")){
+            calc.setOperacao("-");
         }
     }
 
     @Entao("o valor calculado deve ser {int}")
-    public void valor_calculado_deve_ser(int total){
-        assertEquals(total, calc.somar());
+    public void valor_somado_deve_ser(int total) {
+        int resultado = 0;
+        if (calc.getOperacao().equals("+")) {
+            resultado = calc.somar();
+        }
+        if (calc.getOperacao().equals("-")) {
+            resultado = calc.subtrair();
+        }
+        assertEquals(total, resultado);
     }
+
 }
