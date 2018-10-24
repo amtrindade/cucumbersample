@@ -7,13 +7,17 @@ import cucumber.api.java.pt.Quando;
 import static org.junit.Assert.assertEquals;
 
 public class CalculadoraStep {
-    private Calculadora calc;
+    private Calculadora calc = new Calculadora();
 
     @Dado("que informo os valores {int} e {int}")
     public void dado_que_informo_os_valores(int valor1, int valor2){
-        calc = new Calculadora();
+
         calc.setValor1(valor1);
         calc.setValor2(valor2);
+
+        System.out.println("Valor 1: "+valor1);
+        System.out.println("Valor 2: "+valor2);
+
     }
 
     @Quando("aciono a operação {string}")

@@ -5,6 +5,11 @@ public class Calculadora {
     private int valor2;
     private String operacao;
 
+//    public Calculadora(int valor1, int valor2) {
+//        this.valor1 = valor1;
+//        this.valor2 = valor2;
+//    }
+
     public String getOperacao() {
         return operacao;
     }
