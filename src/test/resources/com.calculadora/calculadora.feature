@@ -2,6 +2,7 @@
 
 Funcionalidade: Calculadora
 
+    @soma
     Esquema do Cenário: Deve efetuar a soma de valores <valor1> e <valor2>
         Dado que informo os valores <valor1> e <valor2>
         Quando aciono a operação 'somar'
@@ -14,6 +15,7 @@ Funcionalidade: Calculadora
             |3      |5      |8      |
             |20     |30     |50     |
 
+    @subtracao
     Esquema do Cenário: Deve efetuar a subtração de valores <valor1> e <valor2>
         Dado que informo os valores <valor1> e <valor2>
         Quando aciono a operação 'subtrair'
