@@ -2,7 +2,7 @@
 
 Funcionalidade: Calculadora
 
-    Esquema do Cenário: Deve efetuar a soma de valores
+    Esquema do Cenário: Deve efetuar a soma de valores <valor1> e <valor2>
         Dado que informo os valores <valor1> e <valor2>
         Quando aciono a operação 'somar'
         Então o valor calculado deve ser <total>
@@ -14,7 +14,7 @@ Funcionalidade: Calculadora
             |3      |5      |8      |
             |20     |30     |50     |
 
-    Esquema do Cenário: Deve efetuar a subtração de valores
+    Esquema do Cenário: Deve efetuar a subtração de valores <valor1> e <valor2>
         Dado que informo os valores <valor1> e <valor2>
         Quando aciono a operação 'subtrair'
         Então o valor calculado deve ser <total>

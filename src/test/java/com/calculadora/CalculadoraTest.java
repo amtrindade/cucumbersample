@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = {"src/test/resources/com.calculadora"},
-        glue = {"com.calculadora"},
+        glue = {"com.calculadora", "com.core"},
         plugin = {"pretty"})
 public class CalculadoraTest {
 }
